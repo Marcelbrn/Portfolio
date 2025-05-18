@@ -5,9 +5,9 @@ from PIL import Image
 from functions import load_css
 
 # ===== Configurando variáveis com os das caminhos imagens e links ===== #
-v_img_perfil         = "https://github.com/Marcelbrn/Portfolio/raw/4ceace1b3b5cf082ca52dba6ed49351f14cb33f1/img/img_perfil_marcel.png"
-v_img_linkedin       = "https://github.com/Marcelbrn/Portfolio/raw/4ceace1b3b5cf082ca52dba6ed49351f14cb33f1/img/img_icon_linkedin.png"
-v_img_github         = "https://github.com/Marcelbrn/Portfolio/raw/4ceace1b3b5cf082ca52dba6ed49351f14cb33f1/img/img_icon_github.png"
+v_img_perfil         = "https://github.com/Marcelbrn/Portfolio/raw/56cd2789d1019ab6dd4df3993d3ea4c6548295ee/img/destaque/img_perfil_marcel.png"
+v_img_linkedin       = "https://github.com/Marcelbrn/Portfolio/raw/56cd2789d1019ab6dd4df3993d3ea4c6548295ee/img/destaque/img_icon_linkedin.png"
+v_img_github         = "https://github.com/Marcelbrn/Portfolio/raw/56cd2789d1019ab6dd4df3993d3ea4c6548295ee/img/destaque/img_icon_github.png"
 v_img_plano_de_fundo = Image.open("img/destaque/img_plano_de_fundo.png")
 v_img_txt_sobre      = Image.open("img/destaque/img_dados_cgpt.png")
 v_link_linkedin      = "https://www.linkedin.com/in/marcel-bruno/"
