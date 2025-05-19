@@ -62,3 +62,19 @@ st.markdown("""
     </div> """, unsafe_allow_html=True
 )
 
+# ===== Configurando o container ===== #
+with st.container(border=0):
+    col1, col2 = st.columns([4,1])
+
+    # Adicionando texto 'sobre'
+    with col1:
+        st.markdown("""### 👋🏻 Olá, seja bem-vindo(a)""", unsafe_allow_html=True)
+        st.markdown(
+            """
+                <div style="padding-right: 1rem; padding-left: 1rem;">
+                    Sou Marcel Bruno, profissional apaixonado por Engenharia de Dados, com aproximadamente 8 anos de experiência no desenvolvimento de pipelines de dados, especializado em programação SAS. Atualmente, estou ampliando meus conhecimentos em engenharia de dados, explorando novas linguagens, ferramentas e tecnologias em nuvem para fortalecer ainda mais minha atuação no universo de dados. Além da carreira, sou pai do Heitor e também dos meus pets Thor, Pandora e Tico, gosto de estudar sobre plantas medicinais e cultivo uma vida espiritualizada, buscando equilíbrio e aprendizado contínuo em todas as áreas da vida.
+                </div>
+            """, unsafe_allow_html=True)
+
+    with col2:
+        st.image(v_img_txt_sobre, width=255)
