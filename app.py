@@ -2,7 +2,7 @@
 # ===== Importação bibliotecas ===== #
 import streamlit as st
 from PIL import Image
-from functions import load_css
+from functions import load_css, technical_skills
 
 # ===== Configurando variáveis com os das caminhos imagens e links ===== #
 v_img_perfil         = "https://github.com/Marcelbrn/Portfolio/raw/56cd2789d1019ab6dd4df3993d3ea4c6548295ee/img/destaque/img_perfil_marcel.png"
@@ -15,7 +15,12 @@ v_link_github        = "https://github.com/Marcelbrn/"
 
 
 # ===== Configurando informações de habilidades, projetos e certificações  ===== #
-
+habilidades_tecnicas = {
+    "Dev & Linguagens": ["SAS", "SQL", "Python, PySpark, Shell Script", "DBT"],
+    "BD & Armazenamento": ["SQL Server, Oracle, Teradata", "MongoDB, Cassandra", "Data Warehouse", "Data Lake"],
+    "DevOps & Ferramentas": ["Airflow", "Docker, Kubernetes","Terraform, CI/CD", "Streamlit, Power BI"],
+    "Cloud & Processamento": ["AWS, Azure, GCP", "Databricks", "Snowflake", "BigQuery"],
+}
 
 # ===== Configurações da página como: layout da página, nome e icone na aba do navegador ===== #
 st.set_page_config(page_title = "Marcel Bruno - Portfólio", page_icon = "📑", layout = "wide")
@@ -78,3 +83,6 @@ with st.container(border=0):
 
     with col2:
         st.image(v_img_txt_sobre, width=255)
+
+    # Adicionando quadro de habilidades
+    technical_skills(habilidades_tecnicas)
