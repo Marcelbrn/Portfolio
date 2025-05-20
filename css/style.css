@@ -226,3 +226,47 @@ div[data-testid="stHeadingWithActionElements"] > * {
     text-decoration: underline;
 }
 
+
+/* ================================== */
+/* ===== QUADRO DE CERTIFICAÇÕES ==== */
+/* ================================== */
+.cert-card {
+    background: linear-gradient(to bottom, rgba(249, 249, 249, 0.6) 0%, #ffffff 50%);
+    border-radius: 12px;
+    padding: 0.5rem 0.1rem 0rem 0.1rem;
+    margin-bottom: 0rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    min-height: 280px;
+    max-height: 280px;
+    overflow: hidden;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cert-card h5 {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+}
+
+.cert-card h6 {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.cert-image {
+    width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}

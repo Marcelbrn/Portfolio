@@ -2,7 +2,7 @@
 # ===== Importação bibliotecas ===== #
 import streamlit as st
 from PIL import Image
-from functions import load_css, technical_skills, projects
+from functions import load_css, technical_skills, projects, certification
 
 # ===== Configurando variáveis com os das caminhos imagens e links ===== #
 v_img_perfil         = "https://github.com/Marcelbrn/Portfolio/raw/56cd2789d1019ab6dd4df3993d3ea4c6548295ee/img/destaque/img_perfil_marcel.png"
@@ -29,6 +29,27 @@ projetos = [
         "link_projeto": "https://github.com/Marcelbrn/Portfolio/tree/main",
         "img_projeto":  "https://github.com/Marcelbrn/Portfolio/raw/6352a159f8143429f78e370ae2439414a226b362/img/projetos/img_portfolio.png",
         "tec_projeto": "Python, Streamlit, CSS"
+    }
+]
+
+certificacoes = [
+    {
+        "img_cert": "https://github.com/Marcelbrn/Portfolio/raw/6352a159f8143429f78e370ae2439414a226b362/img/certificacoes/img_certificacao_sas.png",
+        "tp_cert": "SAS Certified Professional",
+        "nm_cert": "Advanced Programming Using SAS 9.4",
+        "link_cert": "https://www.credly.com/badges/3e324c11-c28b-46aa-be33-0e780f9a4fcd/linked_in_profile"
+    },
+    {
+        "img_cert": "https://github.com/Marcelbrn/Portfolio/raw/6352a159f8143429f78e370ae2439414a226b362/img/certificacoes/img_certificacao_sas.png",
+        "tp_cert": "SAS Certified Specialist",
+        "nm_cert": "Base Programming Using SAS 9.4",
+        "link_cert": "https://www.credly.com/badges/603b630f-203c-43a8-a568-6384de851889/linked_in"
+    },
+    {
+        "img_cert": "https://github.com/Marcelbrn/Portfolio/raw/6352a159f8143429f78e370ae2439414a226b362/img/certificacoes/img_certificacao_sas.png",
+        "tp_cert": "SAS Certified",
+        "nm_cert": "Base Programmer for SAS 9",
+        "link_cert": "https://www.youracclaim.com/badges/b2d53d81-f4d4-4f24-af0a-322c2b673020/linked_in_profile"
     }
 ]
 
@@ -99,3 +120,6 @@ with st.container(border=0):
 
     # Adicionando quadro de projetos
     projects(projetos)
+
+    # Adicionando quadro de certificações
+    certification(certificacoes)
