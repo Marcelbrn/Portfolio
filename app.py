@@ -2,7 +2,7 @@
 # ===== Importação bibliotecas ===== #
 import streamlit as st
 from PIL import Image
-from functions import load_css, technical_skills
+from functions import load_css, technical_skills, projects
 
 # ===== Configurando variáveis com os das caminhos imagens e links ===== #
 v_img_perfil         = "https://github.com/Marcelbrn/Portfolio/raw/56cd2789d1019ab6dd4df3993d3ea4c6548295ee/img/destaque/img_perfil_marcel.png"
@@ -18,9 +18,19 @@ v_link_github        = "https://github.com/Marcelbrn/"
 habilidades_tecnicas = {
     "Dev & Linguagens": ["SAS", "SQL", "Python, PySpark, Shell Script", "DBT"],
     "BD & Armazenamento": ["SQL Server, Oracle, Teradata", "MongoDB, Cassandra", "Data Warehouse", "Data Lake"],
-    "DevOps & Ferramentas": ["Airflow", "Docker, Kubernetes","Terraform, CI/CD", "Streamlit, Power BI"],
+    "DevOps & Ferramentas": ["Airbyte", "Docker, Kubernetes","Terraform, CI/CD", "Streamlit, Power BI"],
     "Cloud & Processamento": ["AWS, Azure, GCP", "Databricks", "Snowflake", "BigQuery"],
 }
+
+projetos = [
+    {
+        "nm_projeto": "Portfólio de Projetos",
+        "desc_projeto": "Projeto criado para apresentar minhas experiências, certificações e habilidades técnicas de forma interativa por meio de projetos com o objetivo de destacar meu perfil profissional de maneira clara, organizada e atrativa.",
+        "link_projeto": "https://github.com/Marcelbrn/Portfolio/tree/main",
+        "img_projeto":  "https://github.com/Marcelbrn/Portfolio/raw/6352a159f8143429f78e370ae2439414a226b362/img/projetos/img_portfolio.png",
+        "tec_projeto": "Python, Streamlit, CSS"
+    }
+]
 
 # ===== Configurações da página como: layout da página, nome e icone na aba do navegador ===== #
 st.set_page_config(page_title = "Marcel Bruno - Portfólio", page_icon = "📑", layout = "wide")
@@ -86,3 +96,6 @@ with st.container(border=0):
 
     # Adicionando quadro de habilidades
     technical_skills(habilidades_tecnicas)
+
+    # Adicionando quadro de projetos
+    projects(projetos)

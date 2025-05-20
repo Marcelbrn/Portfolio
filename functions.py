@@ -22,3 +22,25 @@ def technical_skills(v_habilidades):
                                 <ul>{v_lista_habilidades}</ul>
                             </div><br>
                         """, unsafe_allow_html=True)
+
+# ===== Definindo função para gerar quadro de projetos ===== #
+def projects(v_projetos):
+    st.markdown("### 👨🏻‍💻 Projetos")
+    cols = st.columns(3, gap="large")
+    for idx, projeto in enumerate(v_projetos):
+        with cols[idx % 3]:
+
+            st.markdown(
+                f"""
+                    <div class="project-card">
+                        <img src="{projeto['img_projeto']}" class="project-image"/>
+                        <h4>{projeto['nm_projeto']}</h4>
+                        <p>{projeto['desc_projeto']}</p>
+                        <p><b>Tecnologia:</b> {projeto['tec_projeto']}</p>
+                        <div class="project-links">
+                            <a href="{projeto['link_projeto']}" target="_blank">🔗GitHub</a>
+                        </div>
+                    </div><br>
+                """, unsafe_allow_html=True)
+     
+     
