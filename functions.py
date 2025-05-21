@@ -60,3 +60,52 @@ def certification(v_certificacoes):
                         <h6>{cert['nm_cert']}</h6>
                     </div><br>
                 """, unsafe_allow_html=True)                     
+
+# ===== Definindo função para gerar quadro de contato ===== #
+def contact_form():
+
+    # Texto
+    st.markdown("### 📬 Entre em Contato")
+    st.markdown(
+        """
+            <div class="contact-description">Fique à vontade para enviar uma mensagem. Responderei o mais breve possível!</div>
+        """, unsafe_allow_html=True
+    )
+
+    col1, col2 = st.columns([2, 2])
+    
+    # Formulário
+    with col1:
+        st.markdown(
+            """
+            <div class="form-card">
+                <form action="https://formsubmit.co/marcelbrn@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="https://marcelbruno.streamlit.app/?success=true">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input class="form-input" type="text" name="name" placeholder="Nome" required>
+                    <input class="form-input" type="email" name="email" placeholder="Email" required>
+                    <textarea class="form-textarea" name="message" placeholder="Mensagem" rows="4" required></textarea>
+                    <button type="submit" class="form-button">Enviar</button>
+                </form>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+        # Confirmação de envio do email
+        query_params = st.query_params
+
+        if "success" in query_params:
+            st.success("✅ Sua mensagem foi enviada com sucesso!")
+
+    # Imagem
+    v_carta = "https://github.com/Marcelbrn/Portfolio/raw/4d29c79f5b1b8d695c420ff2144427515262b46b/img/destaque/img_carta.png"
+
+    with col2:
+        st.markdown(
+            f"""
+                <div class="contact-container">
+                    <img src="{v_carta}" class="contact-image" alt="Contact illustration">
+                </div>
+            """, unsafe_allow_html=True)
