@@ -80,7 +80,7 @@ def contact_form():
             """
             <div class="form-card">
                 <form action="https://formsubmit.co/marcelbrn@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="https://marcelbruno.streamlit.app/?success=true">
+                    <input type="hidden" name="_next" value="https://marcelbrn.streamlit.app/?success=true">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
                     <input class="form-input" type="text" name="name" placeholder="Nome" required>
