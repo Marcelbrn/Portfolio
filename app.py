@@ -127,4 +127,11 @@ with st.container(border=0):
     # Adicionando contatos
     contact_form()
 
-    
+    # Adicionando o rodapé
+    st.markdown(
+        """
+            <hr style='margin-top: 2rem; margin-bottom: 1rem;'>
+            <p style='text-align: center; font-size: 0.9rem; color: gray;'>
+                © 2025 Marcel Bruno — Desenvolvido com Python & Streamlit
+            </p>
+        """, unsafe_allow_html=True)
