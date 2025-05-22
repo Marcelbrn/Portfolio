@@ -1,4 +1,4 @@
-# 📑 Portfólio
+# 📑 Portfólio de Projetos
 
 ## 👋 Olá, sou Marcel Bruno
 Profissional de Engenharia de Dados, com aproximadamente 8 anos de experiência no desenvolvimento de pipelines de dados, especializado em programação SAS. Atualmente, estou ampliando meus conhecimentos em engenharia de dados, explorando novas linguagens, ferramentas e tecnologias em nuvem para fortalecer ainda mais minha atuação no universo de dados. Além da carreira, sou pai, gosto de estudar sobre plantas medicinais e cultivo uma vida espiritualizada, buscando equilíbrio e aprendizado contínuo em todas as áreas da vida.
@@ -10,8 +10,26 @@ Este repositório serve como meu portfólio profissional, destacando projetos se
 
 ### Projeto 1: Portfólio
 - **Descrição**: Desenvolvimento de página web para apresentação de portfólio profissional, destacando projetos, habilidades e experiências
-- **Tecnologias**: Python, Streamlit, CSS
-- **Link Projeto**: Em breve
+- **Tecnologia**: Python, Streamlit, CSS
+- **Link Projeto**: https://marcelbrn.streamlit.app/
+
+## 👨🏻‍💻 Como Executar Localmente
+```bash
+# Clone o repositório
+git clone https://github.com/Marcelbrn/Portfolio.git
+cd Portfolio
+
+# Crie um ambiente virtual (opcional, mas recomendado)
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Execute o app
+streamlit run app.py
+```
 
 ## 📫 Contato
 - **LinkedIn**: https://www.linkedin.com/in/marcel-bruno/
