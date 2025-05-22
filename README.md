@@ -14,7 +14,7 @@ Este repositório serve como meu portfólio profissional, destacando projetos se
 - **Link Projeto**: https://marcelbrn.streamlit.app/
 
 ## 👨🏻‍💻 Executando Localmente
-```Powershell
+```bash
 # Clone o repositório
 git clone https://github.com/Marcelbrn/Portfolio.git
 cd Portfolio
