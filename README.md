@@ -13,8 +13,8 @@ Este repositório serve como meu portfólio profissional, destacando projetos se
 - **Tecnologia**: Python, Streamlit, CSS
 - **Link Projeto**: https://marcelbrn.streamlit.app/
 
-## 👨🏻‍💻 Como Executar Localmente
-```bash
+## 👨🏻‍💻 Executando Localmente
+```Powershell
 # Clone o repositório
 git clone https://github.com/Marcelbrn/Portfolio.git
 cd Portfolio
